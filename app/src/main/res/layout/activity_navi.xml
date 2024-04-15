@@ -4,20 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.MainActivity">
+    tools:context=".Activities.NaviActivity">
 
     <LinearLayout
-        android:layout_width="415dp"
-        android:layout_height="178dp"
+        android:layout_width="409dp"
+        android:layout_height="437dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/btnAuthAc"
+            android:id="@+id/btnProduct"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Авторизация" />
+            android:text="Продукты" />
+
+        <Button
+            android:id="@+id/btnProviders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Поставщики" />
+
+        <Button
+            android:id="@+id/btnUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Пользователи" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

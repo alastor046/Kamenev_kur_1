@@ -1,4 +1,4 @@
-package com.example.kamenev_kur_1
+package com.example.kamenev_kur_1.Activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

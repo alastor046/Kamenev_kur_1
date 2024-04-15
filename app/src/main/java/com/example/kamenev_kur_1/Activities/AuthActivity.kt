@@ -1,4 +1,4 @@
-package com.example.kamenev_kur_1
+package com.example.kamenev_kur_1.Activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,7 +7,6 @@ import android.widget.Toast
 import com.example.kamenev_kur_1.Classes.AuthData
 import com.example.kamenev_kur_1.Classes.MainApi
 import com.example.kamenev_kur_1.databinding.ActivityAuthBinding
-import com.example.kamenev_kur_1.databinding.ActivityMainBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -57,8 +56,8 @@ class AuthActivity : AppCompatActivity() {
                                 Toast.makeText(this@AuthActivity, "Вы успешно авторизовались!", Toast.LENGTH_SHORT).show()
                             }
 
-                            val intent = Intent(this@AuthActivity, MainActivity::class.java)
-                            startActivity(intent)
+                            val naviIntent = Intent(this@AuthActivity, NaviActivity::class.java)
+                            startActivity(naviIntent)
                         }
                         catch(e: Exception){
                             runOnUiThread{

@@ -14,4 +14,10 @@ interface MainApi {
 
     @POST("Users")
     suspend fun regUser(@Body users: Users) : Response<Users>
+
+    @GET("Products")
+    suspend fun getAllProducts1(): List<Product>
+
+    @GET("Products")
+    suspend fun getAllProducts(): List<Products>
 }

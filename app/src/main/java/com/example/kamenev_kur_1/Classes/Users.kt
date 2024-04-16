@@ -1,11 +1,11 @@
 package com.example.kamenev_kur_1.Classes
 
 data class Users(
-    val id: Int,
-    val name: String,
-    val surname: String,
+    val idUser: Int,
+    val nameUser: String,
+    val surnameUser: String,
     val address: String,
-    val number: String,
+    val numberUser: String,
     val login: String,
     val password: String
 )

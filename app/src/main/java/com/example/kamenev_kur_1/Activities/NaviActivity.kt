@@ -14,7 +14,7 @@ class NaviActivity : AppCompatActivity() {
         setContentView(naviBinding.root)
 
         naviBinding.btnProduct.setOnClickListener {
-            val intent = Intent(this@NaviActivity, ProductActivity::class.java)
+            val intent = Intent(this@NaviActivity, ProductActivityLv::class.java)
             startActivity(intent)
         }
 

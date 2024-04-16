@@ -5,7 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.kamenev_kur_1.Classes.AuthData
-import com.example.kamenev_kur_1.Classes.MainApi
+import com.example.kamenev_kur_1.Api.MainApi
+import com.example.kamenev_kur_1.Api.UserApi
 import com.example.kamenev_kur_1.databinding.ActivityAuthBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -25,7 +26,7 @@ class AuthActivity : AppCompatActivity() {
         val retrofit = Retrofit.Builder()
             .baseUrl("http://192.168.0.7:5257/api/")
             .addConverterFactory(GsonConverterFactory.create()).build()
-        val userApi = retrofit.create(MainApi::class.java)
+        val userApi = retrofit.create(UserApi::class.java)
 
         authBinding.btnAuth.setOnClickListener{
             CoroutineScope(Dispatchers.IO).launch {

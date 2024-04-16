@@ -1,7 +1,9 @@
-package com.example.kamenev_kur_1.Classes
+package com.example.kamenev_kur_1.Api
 
 
-import okhttp3.ResponseBody
+import com.example.kamenev_kur_1.Classes.AuthData
+import com.example.kamenev_kur_1.Classes.Product
+import com.example.kamenev_kur_1.Classes.Users
 import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.GET
@@ -14,10 +16,8 @@ interface MainApi {
 
     @POST("Users")
     suspend fun regUser(@Body users: Users) : Response<Users>
+    
 
     @GET("Products")
-    suspend fun getAllProducts1(): List<Product>
-
-    @GET("Products")
-    suspend fun getAllProducts(): List<Products>
+    suspend fun getAllProducts(): List<Product>
 }

@@ -15,14 +15,14 @@ class ProductAdapter:ListAdapter<Product, ProductAdapter.Holder>(Comparator()) {
     class Holder(view:View): RecyclerView.ViewHolder(view){
         private val binding = ListItemProductBinding.bind(view)
         fun bind(product: Product)= with(binding){
-            name.text = product.name
-            price.text = product.price.toString()
-            type.text = product.type
+            name.text = product.nameProduct
+            price.text = product.priceProduct.toString()
+            type.text = product.typeProduct
         }
     }
     class Comparator:DiffUtil.ItemCallback<Product>(){
         override fun areItemsTheSame(oldItem: Product, newItem: Product): Boolean {
-            return oldItem.id == newItem.id
+            return oldItem.idProduct == newItem.idProduct
 
         }
 

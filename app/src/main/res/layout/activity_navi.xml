@@ -18,18 +18,18 @@
             android:id="@+id/btnProduct"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Продукты" />
+            android:text="Products" />
 
         <Button
             android:id="@+id/btnProviders"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Поставщики" />
+            android:text="Providers" />
 
         <Button
             android:id="@+id/btnUser"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Пользователи" />
+            android:text="Users" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

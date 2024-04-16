@@ -18,6 +18,6 @@
             android:id="@+id/btnAuthAc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Авторизация" />
+            android:text="Autorization" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

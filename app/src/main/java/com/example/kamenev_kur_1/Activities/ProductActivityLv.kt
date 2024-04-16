@@ -50,7 +50,7 @@ class ProductActivityLv : AppCompatActivity() {
                         } catch (e: Exception) {
                             Toast.makeText(
                                 this@ProductActivityLv,
-                                "Сеанс успешно удален!",
+                                "Point is deleted!",
                                 Toast.LENGTH_SHORT
                             ).show()
                             finish()

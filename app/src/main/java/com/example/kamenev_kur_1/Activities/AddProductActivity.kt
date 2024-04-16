@@ -34,7 +34,7 @@ class AddProductActivity : AppCompatActivity() {
                         nameProduct = addProductBinding.newProductNameBox.text.toString(),
                         priceProduct = addProductBinding.newProductPriceBox.text.toString(),
                         typeProduct = addProductBinding.newProductTypeBox.text.toString(),
-                        idProvider = 2
+
                     )
                 )
                 runOnUiThread {
